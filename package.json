@@ -1,0 +1,29 @@
+{
+  "name": "online-compiler",
+  "version": "1.0.0",
+  "description": "this online compiler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/index --ignore client",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aman1218/online_compiler.git"
+  },
+  "author": "Aman Prasad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aman1218/online_compiler/issues"
+  },
+
+  "homepage": "https://github.com/aman1218/online_compiler#readme",
+
+  "devdependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
